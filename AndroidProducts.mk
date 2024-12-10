@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_S22FLIP.mk
+    $(LOCAL_DIR)/twrp_S22FLIP.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_S22FLIP-user \
-    omni_S22FLIP-userdebug \
-    omni_S22FLIP-eng
+    twrp_S22FLIP-eng
