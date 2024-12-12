@@ -79,6 +79,15 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
+# QCOM encryption and decryption
+BOARD_USES_QCOM_FBE_DECRYPTION := true
+#TW_INCLUDE_CRYPTO := true
+#TW_EXFAT_FUSE := true  # Add support for exFAT, if required
+
+# Props
+#TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31

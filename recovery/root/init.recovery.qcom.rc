@@ -36,3 +36,12 @@ on property:ro.boot.usbcontroller=*
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+
+import /init.recovery.qcom_decrypt.rc
+
+
+service set_permissive /system/bin/set_permissive.sh
+    user root
+    group root
+    oneshot
+    seclabel u:r:recovery:s0
