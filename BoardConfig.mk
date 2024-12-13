@@ -81,8 +81,13 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 
 # QCOM encryption and decryption
 BOARD_USES_QCOM_FBE_DECRYPTION := true
-#TW_INCLUDE_CRYPTO := true
 #TW_EXFAT_FUSE := true  # Add support for exFAT, if required
+TW_EXCLUDE_DEFAULT_USB_INIT := true
+TW_EXTRA_LANGUAGES := true
+TW_INCLUDE_CRYPTO := true
+TW_NO_EXFAT_FUSE := true
+TW_INCLUDE_REPACKTOOLS := true
+TW_INCLUDE_RESETPROP := true
 
 # Props
 #TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
